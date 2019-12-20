@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>와장창</title>
+	<style>
+		body{background: black; }
+
+		#garea{width: 700px; height: 400px; margin: auto; background: black; margin-top: 15vh; }
+		#mogi{position: absolute; width: 300px; margin: auto; margin-left: 210px; opacity: 0;}
+		.comp{position: absolute; margin-top: 0px; margin-left:70px; width: 550px;}
+		#com1hit{opacity: 0;}
+		#com2{opacity: 0;}
+		#com2hit{opacity: 0;}
+		#com3{opacity: 0;}
+		.but1{position: absolute; padding: 15px 25px; font-size: 24px; cursor: pointer; text-align: center; text-decoration: none; outline: none; color: blue; background-color: gray; border: none; border-radius: 15px; box-shadow: 0 9px #999; margin-left: 720px; margin-top: 10px;}
+		.but1:hover {background-color: red;}
+		.but1:active {background-color: skyblue; box-shadow: 0 5px #666; transform: translateY(4px);}
+		.hbut{position: absolute; padding: 15px 25px; font-size: 24px; cursor: pointer; text-align: center; text-decoration: none; outline: none; color: blue; background-color: gray; border: none; border-radius: 15px; box-shadow: 0 9px #999; margin-left:980px; opacity: 0; margin-top: 10px;}
+		.hbut:hover {background-color: red;}
+		.hbut:active {background-color: skyblue; box-shadow: 0 5px #666; transform: translateY(4px);}
+		#grabar{width: 0px; height: 20px; background: red; margin:auto; }
+		#tel{position: absolute; opacity: 0;}
+		.talk{position: absolute; color: white; font-size: 20px; margin-left: 37px; margin-top: 290px; font-family: DungGeunMo; opacity: 0;}
+
+
+		@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
+	
+	</style>
+</head>
+<body>
+	<div id="garea">
+		<img src="comp1.png" id="commain" class="comp">
+		<img src="tel.png" id="tel">
+		<img src="mogi.png" id="mogi">
+		
+		<p id="d1" class="talk">??? : 어머!!!!!!!!!</p>
+		<p id="d2" class="talk">??? : 여보!!!!!!!!!!!!!!!</p>
+		<p id="d3" class="talk">??? : 여보 정신좀 차려봐요 제발</p>
+		<p id="d4" class="talk">의문의 마우스가 나타났다.</p>
+		<p id="d5" class="talk">의문의 마우스 : 우리 남편 맨날 퇴근하면 이꼴로 들어오는데</p>
+		<p id="d6" class="talk">컴퓨터의 아내 : 이게 다 당신 때문이었구만</p>
+		<p id="d7" class="talk">마우스는 자신의 배에서 작은 공을 꺼냈다.</p>
+		<p id="d8" class="talk">컴퓨터의 아내 : 가만,,,안둬,,,,</p>
+		<p id="d9" class="talk">마우스는 울부짖으며 공을 나에게 던졌다.</p>
+		<p id="d10" class="talk">나 : 으악!</p>
+		<p id="d11" class="talk">죽어가는 마우스 : 너가,, 가장 많이,, 피해를 줬던,,, </p>
+		<p id="d12" class="talk">죽어가는 마우스 : 대상의 모습으로,, 태어나게,, 될 ,,,</p>
+		<p id="d13" class="talk">죽은 마우스 : ....</p>
+		<p id="d14" class="talk">마우스는 그만 숨을 거뒀다.</p>
+		<p id="d15" class="talk">위이잉</p>
+		<p id="d16" class="talk">나는 모기가 되었다.</p>
+
+	
+	</div>
+
+	<div id="grabar"></div>
+	<audio src="next.wav" id="nextgo"></audio>
+	<audio src="transfo.wav" id="explode"></audio>
+	<audio src="glassbo.wav" id="glass"></audio>
+	<audio src="hit.mp3" id="hits"></audio>
+
+
+	<button class="but1" id="hitbut">HIT</button>
+	<button class="hbut" id="hbut">NEXT</button>
+
+
+	<script type="text/javascript">
+		var astate = 0;
+		hitbut.onclick = function(){
+			astate = astate + 1;
+			if(astate == 1){
+				grabar.style.width = "70px";
+				commain.src = "com1hit.png";
+				hits.play();
+				glass.play();
+			}else if(astate == 2){
+				grabar.style.width = "140px";
+				commain.src = "comp1.png";
+				hits.play();
+			}else if(astate == 3){
+				grabar.style.width = "210px";
+				commain.src = "com1hit.png";
+				hits.play();
+			}else if(astate == 4){
+				grabar.style.width = "280px";
+				commain.src = "comp1.png";
+				hits.play();
+				glass.play();
+			}else if(astate == 5){
+				grabar.style.width = "350px";
+				commain.src = "com1hit.png";
+				hits.play();
+			}else if(astate == 6){
+				grabar.style.width = "420px";
+				commain.src = "comp1.png";
+				hits.play();
+			}else if(astate == 7){
+				grabar.style.width = "490px";
+				commain.src = "com1hit.png";
+				hits.play();
+			}else if(astate == 8){
+				grabar.style.width = "560px";
+				commain.src = "comp1.png";
+				hits.play();
+				glass.play();
+			}else if(astate == 9){
+				grabar.style.width = "630px";
+				commain.src = "com1hit.png";
+				hits.play();
+			}else if(astate == 10){
+				grabar.style.width = "700px";
+				commain.src = "comp1.png";
+				hits.play();
+			}else if(astate == 11){
+				grabar.style.width = "70px";
+				commain.src = "comp2.png";
+				hits.play();
+				
+			}else if(astate == 12){
+				grabar.style.width = "140px";
+				commain.src = "com2hit.png";
+				hits.play();
+				glass.play();
+			}else if(astate ==13){
+				grabar.style.width = "210px";
+				commain.src = "comp2.png";
+				hits.play();
+			}else if(astate ==14){
+				grabar.style.width = "280px";
+				commain.src = "com2hit.png";
+				hits.play();
+			}else if(astate == 15){
+				grabar.style.width = "350px";
+				commain.src = "comp2.png";
+				hits.play();
+				glass.play();
+			}else if(astate == 16){
+				grabar.style.width = "420px";
+				commain.src = "com2hit.png";
+				hits.play();
+			}else if(astate == 17){
+				grabar.style.width = "490px";
+				commain.src = "comp2.png";
+				hits.play();
+			}else if(astate == 18){
+				grabar.style.width = "560px";
+				commain.src = "com2hit.png";
+				hits.play();
+				glass.play();
+			}else if(astate == 19){
+				grabar.style.width = "630px";
+				commain.src = "comp2.png";
+				hits.play();
+				glass.play();
+			}else if(astate == 20){
+				grabar.style.width = "700px";
+				commain.src = "com2hit.png";
+				hits.play();
+			}else if(astate == 21){
+				grabar.style.opacity = "0";
+				commain.src = "comp3.png";
+				hits.play();
+				
+				glass.play();
+				hitbut.style.opacity = "0";
+				hbut.style.opacity = "1";
+
+			}else{
+				astate = 0;
+				commain.src = "comp3.png";
+				hbut.style.opacity = "1";
+			}
+		}
+
+		var bstate = 0;
+		hbut.onclick = function(){
+			bstate = bstate + 1;
+			if(bstate == 1){
+				tel.style.opacity = "1";
+				commain.style.opacity = "0";
+				d1.style.opacity = "1";
+				nextgo.play();
+
+			}else if(bstate == 2){
+				d1.style.opacity = "0";
+				d2.style.opacity = "1";
+				nextgo.play();
+			}else if(bstate == 3){
+				d2.style.opacity = "0";
+				d3.style.opacity = "1";
+				nextgo.play();
+				commain.style.opacity = "1";
+				commain.src = "mshok.png";
+			}else if(bstate == 4){
+				d3.style.opacity = "0";
+				d4.style.opacity = "1";
+				nextgo.play();
+				commain.src = "mcry.png";
+			}else if(bstate == 5){
+				d4.style.opacity = "0";
+				d5.style.opacity = "1";
+				nextgo.play();
+				commain.src = "mmad.png";
+			}else if(bstate == 6){
+				d5.style.opacity = "0";
+				d6.style.opacity = "1";
+				nextgo.play();
+				commain.src = "mverymad.png";
+			}else if(bstate == 7){
+				d6.style.opacity = "0";
+				d7.style.opacity = "1";
+				nextgo.play();
+				commain.src = "boll.png";
+			}else if(bstate == 8){
+				d7.style.opacity = "0";
+				d8.style.opacity = "1";
+				nextgo.play();
+				commain.src = "mmad.png";
+				commain.style.opacity = "1";
+			}else if(bstate == 9){
+				d8.style.opacity = "0";
+				d9.style.opacity = "1";
+				nextgo.play();
+				commain.style.opacity = "0";
+			}else if(bstate == 10){
+				d9.style.opacity = "0";
+				d10.style.opacity = "1";
+				
+				nextgo.play();
+				
+			}else if(bstate == 11){
+				d10.style.opacity = "0";
+				tel.style.opacity = "0";
+				nextgo.play();
+				explode.play();
+				
+			}else if(bstate == 12){
+				tel.style.opacity = "1";
+				d10.style.opacity = "0";
+				d11.style.opacity = "1";
+				commain.src = "mcry.png";
+				commain.style.opacity = "1";
+				nextgo.play();
+			}else if(bstate == 13){
+				d11.style.opacity = "0";
+				d12.style.opacity = "1";
+				commain.src = "mmad.png";
+				nextgo.play();
+			}else if(bstate == 14){
+				d12.style.opacity = "0";
+				d13.style.opacity = "1";
+				commain.src = "mdie.png";
+				nextgo.play();
+			}else if(bstate == 15){
+				d13.style.opacity = "0";
+				d14.style.opacity = "1";
+				commain.style.opacity = "0";
+				nextgo.play();
+			}else if(bstate == 16){
+				d14.style.opacity = "0";
+				d15.style.opacity = "1";
+				nextgo.play();
+			}else if(bstate == 17){
+				d15.style.opacity = "0";
+				d16.style.opacity = "1";
+				nextgo.play();
+				mogi.style.opacity = "1";
+
+				hbut.style.opacity = "0";
+			}
+		
+		}
+
+		
+
+	</script>
+
+
+
+
+</body>
+</html>
